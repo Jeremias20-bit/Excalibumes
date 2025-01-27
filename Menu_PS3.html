@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elección De Juegos PS3</title>
+  <link rel="stylesheet" href="Estilos_games.css">
+  <style>
+    /* Estilos para centrar la página */
+    body, html {
+      background-image: url('img/ps3/fondops3.png');
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #333;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Estilos del contenedor */
+    .button-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    /* Estilos de los botones */
+    .rgb-button {
+      padding: 30px 30px;
+      border: 2px solid transparent;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+      cursor: pointer;
+      position: relative;
+      text-decoration: none;
+      overflow: hidden;
+      transition: color 0.3s ease;
+      z-index: 1;
+    }
+
+    /* Efecto de iluminación RGB */
+    .rgb-button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, rgb(255, 255, 255), green, blue, rgb(255, 0, 0), rgb(0, 255, 247));
+      z-index: -1;
+      filter: blur(8px);
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+      border-radius: 10px;
+      animation: rgb-effect 3s linear infinite;
+    }
+
+    /* Efecto de hover */
+    .rgb-button:hover::before {
+      filter: blur(12px);
+      opacity: 1;
+    }
+
+    /* Animación RGB */
+    @keyframes rgb-effect {
+      0% { transform: translate(0, 0); }
+      50% { transform: translate(-50%, -50%); }
+      100% { transform: translate(0, 0); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="button-container">
+    <a href="ps3.html" class="rgb-button">Juegos Originales</a>
+    <a href="" class="rgb-button">Juegos Carpeta</a>
+    <a href="" class="rgb-button">Juegos PKG [HEN]</a>
+  </div>
+
+  <button class="volver-btn" onclick="window.location.href='index.html'">HOME</button>
+</body>
+</html>

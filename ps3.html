@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playstations 3</title>
+    <link rel="stylesheet" href="Estilos_games.css">
+</head>
+
+<style>
+    body {
+        background-image: url('img/ps3/fondops3.png');
+        background-position: center;
+        color: #000000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Estilo para el borde azul al seleccionar una figura */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgb(4, 0, 255), 0 0 20px rgb(4, 0, 255), 0 0 30px rgb(4, 0, 255), 0 0 40px rgb(4, 0, 255);
+    }
+    50% {
+        box-shadow: 0 0 20px rgb(4, 0, 255), 0 0 30px rgb(4, 0, 255), 0 0 40px rgb(4, 0, 255), 0 0 50px rgb(4, 0, 255);
+    }
+    100% {
+        box-shadow: 0 0 10px rgb(4, 0, 255), 0 0 20px rgb(4, 0, 255), 0 0 30px rgb(4, 0, 255), 0 0 40px rgb(4, 0, 255);
+    }
+}
+
+.selected {
+    border: 18px solid rgb(4, 0, 255);
+    animation: glow 1.5s infinite alternate;
+}
+
+
+    /* Posicionamiento del cuadro de suma */
+    #total-suma {
+        position: fixed;
+        top: 22px;
+        right: 10px;
+        /* Cambiado de right a left */
+        background-color: white;
+        border: 8px solid rgb(4, 0, 255);
+        padding: 10px;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <div class="abecedario">
+        <a href="#section-#">#</a>
+        <a href="#section-A">A</a>
+        <a href="#section-B">B</a>
+        <a href="#section-C">C</a>
+        <a href="#section-D">D</a>
+        <a href="#section-E">E</a>
+        <a href="#section-F">F</a>
+        <a href="#section-G">G</a>
+        <a href="#section-H">H</a>
+        <a href="#section-I">I</a>
+        <a href="#section-J">J</a>
+        <a href="#section-K">K</a>
+        <a href="#section-L">L</a>
+        <a href="#section-M">M</a>
+        <a href="#section-N">N</a>
+        <a href="#section-O">O</a>
+        <a href="#section-P">P</a>
+        <a href="#section-Q">Q</a>
+        <a href="#section-R">R</a>
+        <a href="#section-S">S</a>
+        <a href="#section-T">T</a>
+        <a href="#section-U">U</a>
+        <a href="#section-V">V</a>
+        <a href="#section-W">W</a>
+        <a href="#section-X">X</a>
+        <a href="#section-Y">Y</a>
+        <a href="#section-Z">Z</a>
+    </div>
+
+    <div id="total-suma">Total: 0 GB</div>
+    <div id="caption-info" class="caption-info"></div>
+
+    <div class="game-section" id="section-(#)">
+        <div class="letter-header">Porcentajes Aproximados Juegos_PS3</div>
+        <div class="games">
+
+            <div class="game-section" id="section-#">
+                <div class="letter-header">#</div>
+                <div class="games">
+                    <figure class="figure-item">
+                        <img src="img/ps3/BLES01614.JPG" alt="Game 1#">
+                        <figcaption class="special-caption">8.4_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/BLES01994.JPG" alt="Game 2#">
+                        <figcaption class="special-caption">6.52_GB</figcaption>
+                    </figure>
+
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/" alt="Game 3#">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-A">
+                <div class="letter-header">A</div>
+                <div class="games">
+                    <figure class="figure-item">
+                        <img src="img/ps3/A/BLES00586.JPG" alt="Game A1">
+                        <figcaption class="special-caption">5.58_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/A/BLES00659.JPG" alt="Game A2">
+                        <figcaption class="special-caption">4.41_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/A/BLES00898.JPG" alt="Game A3">
+                        <figcaption class="special-caption">15.46_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/A/BLES00909.JPG" alt="Game A4">
+                        <figcaption class="special-caption">6.84_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/A/BLES01392.JPG" alt="Game A5">
+                        <figcaption class="special-caption">6.84_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/A/BLES01466.JPG" alt="Game A6">
+                        <figcaption class="special-caption">15.31_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/A/BLES01669.JPG" alt="Game A7">
+                        <figcaption class="special-caption">9.19_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/A/BLES01732.JPG" alt="Game A8">
+                        <figcaption class="special-caption">1.41_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/A/BLES01763.JPG" alt="Game A9">
+                        <figcaption class="special-caption">7.22_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/A/BLES01882.JPG" alt="Game A10">
+                        <figcaption class="special-caption">8.4_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/A/BLES02061.JPG" alt="Game A11">
+                        <figcaption class="special-caption">6.09_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/A/BLUS30721.JPG" alt="Game A12">
+                        <figcaption class="special-caption">6.53_GB</figcaption>
+                    </figure>
+
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/A/" alt="Game A13">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-B">
+                <div class="letter-header">B</div>
+                <div class="games">
+                    <figure class="figure-item">
+                        <img src="img/ps3/B/BCAS25017.JPG" alt="Game B1">
+                        <figcaption class="special-caption">23.61_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/B/BLES00599.JPG" alt="Game B2">
+                        <figcaption class="special-caption">5.9_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/B/BLES00697.JPG" alt="Game B3">
+                        <figcaption class="special-caption">3.1_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/B/BLES00728.JPG" alt="Game B4">
+                        <figcaption class="special-caption">8.43_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/B/BLES00759.JPG" alt="Game B5">
+                        <figcaption class="special-caption">5.78_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/B/BLES00773.JPG" alt="Game B6">
+                        <figcaption class="special-caption">7.54_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/B/BLES00926.JPG" alt="Game B7">
+                        <figcaption class="special-caption">7.57_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/B/BLES01212.JPG" alt="Game B8">
+                        <figcaption class="special-caption">4.61_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/B/BLES02207.JPG" alt="Game B9">
+                        <figcaption class="special-caption">7.19_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/B/BLUS30762.JPG" alt="Game B10">
+                        <figcaption class="special-caption">9.33_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/B/BLUS30982.JPG" alt="Game B11">
+                        <figcaption class="special-caption">5.94_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/B/BLUS31147.JPG" alt="Game B12">
+                        <figcaption class="special-caption">12.03_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/B/BLUS31162.JPG" alt="Game B13">
+                        <figcaption class="special-caption">10.68_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/B/BLUS31539.JPG" alt="Game B14">
+                        <figcaption class="special-caption">13.82_GB</figcaption>
+                    </figure>
+
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/B/" alt="Game B15">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-C">
+                <div class="letter-header">C</div>
+                <div class="games">
+                    <figure class="figure-item">
+                        <img src="img/ps3/C/BCAS20184.JPG" alt="Game C1">
+                        <figcaption class="special-caption">2.84_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/C/BLES00219.JPG" alt="Game C2">
+                        <figcaption class="special-caption">6.31_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/C/BLES00357.JPG" alt="Game C3">
+                        <figcaption class="special-caption">10.81_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/C/BLES01031.JPG" alt="Game C4">
+                        <figcaption class="special-caption">10.28_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/C/BLES01047.JPG" alt="Game C5">
+                        <figcaption class="special-caption">11.81_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/C/BLES01420.JPG" alt="Game C6">
+                        <figcaption class="special-caption">8.06_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/C/BLES01644.JPG" alt="Game C7">
+                        <figcaption class="special-caption">4.15_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/C/BLUS30337.JPG" alt="Game C8">
+                        <figcaption class="special-caption">7.14_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/C/BLUS30347.JPG" alt="Game C9">
+                        <figcaption class="special-caption">3.71_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/C/BLUS30631.JPG" alt="Game C10">
+                        <figcaption class="special-caption">6.67_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/C/BLUS30795.JPG" alt="Game C11">
+                        <figcaption class="special-caption">5.34_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/C/BLUS30976.JPG" alt="Game C12">
+                        <figcaption class="special-caption">7.88_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/C/BLUS31141.JPG" alt="Game C13">
+                        <figcaption class="special-caption">18.78_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/C/BLUS31270.JPG" alt="Game C14">
+                        <figcaption class="special-caption">10.89_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/C/BLUS31466.JPG" alt="Game C15">
+                        <figcaption class="special-caption">13.59_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/C/BLUS31527.JPG" alt="Game C16">
+                        <figcaption class="special-caption">4.21_GB</figcaption>
+                    </figure>
+
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/C/" alt="Game C17">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-D">
+                <div class="letter-header">D</div>
+                <div class="games">
+                    <figure class="figure-item">
+                        <img src="img/ps3/D/BCAS20071.JPG" alt="Game D1">
+                        <figcaption class="special-caption">3.82_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/D/BCAS20325.JPG" alt="Game D2">
+                        <figcaption class="special-caption">11.29_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/D/BLES01041.JPG" alt="Game D3">
+                        <figcaption class="special-caption">12.9_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/D/BLES01396.JPG" alt="Game D4">
+                        <figcaption class="special-caption">4.29_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/D/BLES01597.JPG" alt="Game D5">
+                        <figcaption class="special-caption">5.7_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/D/BLES01657.JPG" alt="Game D6">
+                        <figcaption class="special-caption">13.65_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/D/BLES01679.JPG" alt="Game D7">
+                        <figcaption class="special-caption">3.97_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/D/BLES01733.JPG" alt="Game D8">
+                        <figcaption class="special-caption">11.37_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/D/BLES01739.JPG" alt="Game D9">
+                        <figcaption class="special-caption">2.67_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/D/BLES01794.JPG" alt="Game D10">
+                        <figcaption class="special-caption">10.65_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/D/BLES01925.JPG" alt="Game D11">
+                        <figcaption class="special-caption">13.13_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/D/BLES01959.JPG" alt="Game D12">
+                        <figcaption class="special-caption">6.7_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/D/BLES01969.JPG" alt="Game D13">
+                        <figcaption class="special-caption">700_MB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/D/BLES02096.JPG" alt="Game D14">
+                        <figcaption class="special-caption">6.23_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/D/BLUS30405.JPG" alt="Game D15">
+                        <figcaption class="special-caption">8_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/D/BLUS30971.png" alt="Game D16">
+                        <figcaption class="special-caption">6_GB</figcaption>
+                    </figure>
+
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/D/" alt="Game D17">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-E">
+                <div class="letter-header">E</div>
+                <div class="games">
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/E/" alt="Game E1">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-F">
+                <div class="letter-header">F</div>
+                <div class="games">
+                    <figure class="figure-item">
+                        <img src="img/ps3/F/BLES00741.JPG" alt="Game F1">
+                        <figcaption class="special-caption">8.44_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/F/BLES01039.JPG" alt="Game F2">
+                        <figcaption class="special-caption">5.37_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/F/BLES01137.JPG" alt="Game F3">
+                        <figcaption class="special-caption">5_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/F/BLES01479.JPG" alt="Game F4">
+                        <figcaption class="special-caption">10.44_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/F/BLES02011.JPG" alt="Game F5">
+                        <figcaption class="special-caption">15.21_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/F/BLES02080.JPG" alt="Game F6">
+                        <figcaption class="special-caption">3.34_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/F/BLES02250.JPG" alt="Game F7">
+                        <figcaption class="special-caption">5.89_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/F/BLUS30882.JPG" alt="Game F8">
+                        <figcaption class="special-caption">4.57_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/F/BLUS31616.JPG" alt="Game F9">
+                        <figcaption class="special-caption">8.84_GB</figcaption>
+                    </figure>
+
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/F/" alt="Game F10">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-G">
+                <div class="letter-header">G</div>
+                <div class="games">
+                    <figure class="figure-item">
+                        <img src="img/ps3/G/BCAS20102.JPG" alt="Game G1">
+                        <figcaption class="special-caption">21.77_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/G/BCAS25003.JPG" alt="Game G2">
+                        <figcaption class="special-caption">40_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/G/BCAS25016.JPG" alt="Game G3">
+                        <figcaption class="special-caption">34.78_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/G/BCAS25018.JPG" alt="Game G4">
+                        <figcaption class="special-caption">14_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/G/BLAS50770.JPG" alt="Game G5">
+                        <figcaption class="special-caption">5.42_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/G/BLES00229_G.JPG" alt="Game G6">
+                        <figcaption class="special-caption">9.47_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/G/BLES01128.JPG" alt="Game G7">
+                        <figcaption class="special-caption">7.14_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/G/BLES01292.JPG" alt="Game G8">
+                        <figcaption class="special-caption">7.17_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/G/BLES01807.JPG" alt="Game G9">
+                        <figcaption class="special-caption">18_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/G/BLES02219.JPG" alt="Game G10">
+                        <figcaption class="special-caption">2_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/G/BLUS30074.JPG" alt="Game G11">
+                        <figcaption class="special-caption">5.6_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/G/BLUS30521.JPG" alt="Game G12">
+                        <figcaption class="special-caption">8_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/G/BLUS31055.JPG" alt="Game G13">
+                        <figcaption class="special-caption">5.7_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/G/BLUS31588.JPG" alt="Game G14">
+                        <figcaption class="special-caption">6.2_GB</figcaption>
+                    </figure>
+
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/G/" alt="Game G15">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-H">
+                <div class="letter-header">H</div>
+                <div class="games">
+                    <figure class="figure-item">
+                        <img src="img/ps3/H/BLUS30406.JPG" alt="Game H1">
+                        <figcaption class="special-caption">6.4_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/H/BLUS31142.JPG" alt="Game H2">
+                        <figcaption class="special-caption">18_GB</figcaption>
+                    </figure>
+
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/H/" alt="Game H3">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-I">
+                <div class="letter-header">I</div>
+                <div class="games">
+                    <figure class="figure-item">
+                        <img src="img/ps3/I/BCAS20074.JPG" alt="Game I1">
+                        <figcaption class="special-caption">7.1_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/I/BCAS20181.JPG" alt="Game I2">
+                        <figcaption class="special-caption">15.1_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/I/BLES00247.JPG" alt="Game I3">
+                        <figcaption class="special-caption">6.2_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/I/BLES00648.JPG" alt="Game I4">
+                        <figcaption class="special-caption">5_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/I/BLES01967.JPG" alt="Game I5">
+                        <figcaption class="special-caption">9.7_GB</figcaption>
+                    </figure>
+
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/I/BLES01967.JPG" alt="Game I5">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-J">
+                <div class="letter-header">J</div>
+                <div class="games">
+                    <figure class="figure-item">
+                        <img src="img/ps3/J/BLUS31519.JPG" alt="Game J1">
+                        <figcaption class="special-caption">3.2_GB</figcaption>
+                    </figure>
+
+                    <!--<figure class="figure-item">
+                        <img src="images/gameJ2.jpg" alt="Game J2">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-K">
+                <div class="letter-header">K</div>
+                <div class="games">
+                    <figure class="figure-item">
+                        <img src="img/ps3/K/BCAS25008.JPG" alt="Game K1">
+                        <figcaption class="special-caption">22_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/K/BLUS30102.JPG" alt="Game K2">
+                        <figcaption class="special-caption">9.6_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/K/BLUS30845.JPG" alt="Game K3">
+                        <figcaption class="special-caption">2.2_GB</figcaption>
+                    </figure>
+
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/K/" alt="Game K4">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-L">
+                <div class="letter-header">L</div>
+                <div class="games">
+                    <figure class="figure-item">
+                        <img src="img/ps3/L/BCAS20205.JPG" alt="Game L1">
+                        <figcaption class="special-caption">7_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/L/BCAS20322.JPG" alt="Game L2">
+                        <figcaption class="special-caption">7.8_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/L/BLES01613.JPG" alt="Game L3">
+                        <figcaption class="special-caption">5_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/L/BLUS30113.JPG" alt="Game L4">
+                        <figcaption class="special-caption">8_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/L/BLUS30434.JPG" alt="Game L5">
+                        <figcaption class="special-caption">10.4_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/L/BLUS30554.JPG" alt="Game L6">
+                        <figcaption class="special-caption">23.7_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/L/BLUS31161.JPG" alt="Game L7">
+                        <figcaption class="special-caption">6.3_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/L/BLUS31518.JPG" alt="Game L8">
+                        <figcaption class="special-caption">4.8_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/L/BLUS31550.JPG" alt="Game L9">
+                        <figcaption class="special-caption">8_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/S/BLUS31578.JPG" alt="Game L10">
+                        <figcaption class="special-caption">7.5_GB</figcaption>
+                    </figure>
+
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/L/" alt="Game L10">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-M">
+                <div class="letter-header">M</div>
+                <div class="games">
+                    <figure class="figure-item">
+                        <img src="img/ps3/M/BCES00484.JPG" alt="Game M1">
+                        <figcaption class="special-caption">18.76_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/M/BCUS98167.png" alt="Game M2">
+                        <figcaption class="special-caption">16.1_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/M/BLES00246.JPG" alt="Game M3">
+                        <figcaption class="special-caption">24.6_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/M/BLES00662.JPG" alt="Game M4">
+                        <figcaption class="special-caption">6.2_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/M/BLES01192.JPG" alt="Game M5">
+                        <figcaption class="special-caption">2.5_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/M/BLES02162.JPG" alt="Game M6">
+                        <figcaption class="special-caption">10_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/M/BLUS30190.JPG" alt="Game M7">
+                        <figcaption class="special-caption">4.8_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/M/BLUS30246.JPG" alt="Game M8">
+                        <figcaption class="special-caption">6_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/M/BLUS30281.JPG" alt="Game M9">
+                        <figcaption class="special-caption">8.3_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/M/BLUS30557.JPG" alt="Game M10">
+                        <figcaption class="special-caption">12.7_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/M/BLUS30902.JPG" alt="Game M11">
+                        <figcaption class="special-caption">9_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/M/BLUS30990.JPG" alt="Game M12">
+                        <figcaption class="special-caption">12_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/M/BLUS31045.JPG" alt="Game M13">
+                        <figcaption class="special-caption">23_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/M/BLUS31426.JPG" alt="Game M14">
+                        <figcaption class="special-caption">300_MB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/M/BLUS31491.JPG" alt="Game M15">
+                        <figcaption class="special-caption">11.8_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/M/BLUS31589.JPG" alt="Game M16">
+                        <figcaption class="special-caption">6.7_GB</figcaption>
+                    </figure>
+
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/M/" alt="Game M17">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-N">
+                <div class="letter-header">N</div>
+                <div class="games">
+                    <figure class="figure-item">
+                        <img src="img/ps3/N/BLES01008.JPG" alt="Game N1">
+                        <figcaption class="special-caption">6.78_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/N/BLES01481.JPG" alt="Game N2">
+                        <figcaption class="special-caption">5_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/N/BLES01951.JPG" alt="Game N3">
+                        <figcaption class="special-caption">7_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/N/BLES02014.JPG" alt="Game N4">
+                        <figcaption class="special-caption">6.5_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/N/BLES02242.JPG" alt="Game N5">
+                        <figcaption class="special-caption">8.1_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/N/BLUS30066.JPG" alt="Game N6">
+                        <figcaption class="special-caption">6.2_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/N/BLUS30391.JPG" alt="Game N7">
+                        <figcaption class="special-caption">4.3_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/N/BLUS30566.JPG" alt="Game N8">
+                        <figcaption class="special-caption">6.7_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/N/BLUS30757.JPG" alt="Game N9">
+                        <figcaption class="special-caption">7_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/N/BLUS30916.JPG" alt="Game N10">
+                        <figcaption class="special-caption">3_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/N/BLUS31010.JPG" alt="Game N11">
+                        <figcaption class="special-caption">4.2_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/N/BLUS31201.JPG" alt="Game N12">
+                        <figcaption class="special-caption">6.3_GB</figcaption>
+                    </figure>
+
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/N/" alt="Game N13">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-O">
+                <div class="letter-header">O</div>
+                <div class="games">
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/O/" alt="Game O1">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-P">
+                <div class="letter-header">P</div>
+                <div class="games">
+                    <figure class="figure-item">
+                        <img src="img/ps3/P/BCES01435.JPG" alt="Game P1">
+                        <figcaption class="special-caption">4.7_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/P/BLUS31219.JPG" alt="Game P2">
+                        <figcaption class="special-caption">4.2_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/P/BLUS31410.JPG" alt="Game P3">
+                        <figcaption class="special-caption">2.6_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/P/BLUS31612.JPG" alt="Game P4">
+                        <figcaption class="special-caption">8.1_GB</figcaption>
+                    </figure>
+
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/P/" alt="Game P5">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-Q">
+                <div class="letter-header">Q</div>
+                <div class="games">
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/Q/" alt="Game Q1">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-R">
+                <div class="letter-header">R</div>
+                <div class="games">
+                    <figure class="figure-item">
+                        <img src="img/ps3/R/BCAS01594.JPG" alt="Game R1">
+                        <figcaption class="special-caption">5_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/R/BCES01141.JPG" alt="Game R2">
+                        <figcaption class="special-caption">19_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/R/BCUS98190.JPG" alt="Game R3">
+                        <figcaption class="special-caption">18_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/R/BCUS99245.JPG" alt="Game R4">
+                        <figcaption class="special-caption">9_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/R/BLES01963.JPG" alt="Game R5">
+                        <figcaption class="special-caption">1.7_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/R/BLES02133.JPG" alt="Game R6">
+                        <figcaption class="special-caption">7.3_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/R/BLUS30418.JPG" alt="Game R7">
+                        <figcaption class="special-caption">9.2_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/R/BLUS30485.JPG" alt="Game R8">
+                        <figcaption class="special-caption">22_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/R/BLUS30491.JPG" alt="Game R9">
+                        <figcaption class="special-caption">11_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/R/BLUS30855.JPG" alt="Game R10">
+                        <figcaption class="special-caption">9.19_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/R/BLUS31051.JPG" alt="Game R11">
+                        <figcaption class="special-caption">12_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/R/BLUS31183.JPG" alt="Game R12">
+                        <figcaption class="special-caption">6.4_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/R/BLUS31444.JPG" alt="Game R13">
+                        <figcaption class="special-caption">8.1_GB</figcaption>
+                    </figure>
+
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/R/" alt="Game R14">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-S">
+                <div class="letter-header">S</div>
+                <div class="games">
+                    <figure class="figure-item">
+                        <img src="img/ps3/S/BLES00425_S.JPG" alt="Game S1">
+                        <figcaption class="special-caption">7.8_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/S/BLES00678.JPG" alt="Game S2">
+                        <figcaption class="special-caption">22_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/S/BLES00750.JPG" alt="Game S3">
+                        <figcaption class="special-caption">3.6_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/S/BLES01157.JPG" alt="Game S4">
+                        <figcaption class="special-caption">6.5_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/S/BLES01236.JPG" alt="Game S5">
+                        <figcaption class="special-caption">9_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/S/BLES01250.JPG" alt="Game S6">
+                        <figcaption class="special-caption">7.1_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/S/BLES01446.JPG" alt="Game S7">
+                        <figcaption class="special-caption">4.1_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/S/BLES01504.JPG" alt="Game S8">
+                        <figcaption class="special-caption">8_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/S/BLES01527.JPG" alt="Game S9">
+                        <figcaption class="special-caption">3.7_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/S/BLES01661.JPG" alt="Game S10">
+                        <figcaption class="special-caption">7_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/S/BLES01745.JPG" alt="Game S11">
+                        <figcaption class="special-caption">8.5_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/S/BLES01812.JPG" alt="Game S12">
+                        <figcaption class="special-caption">3.5_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/S/BLES01981.JPG" alt="Game S13">
+                        <figcaption class="special-caption">4.3_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/S/BLES02181.JPG" alt="Game S14">
+                        <figcaption class="special-caption">6_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/S/BLUS30722.JPG" alt="Game S15">
+                        <figcaption class="special-caption">13_GB</figcaption>
+                    </figure>
+
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/S/" alt="Game S17">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-T">
+                <div class="letter-header">T</div>
+                <div class="games">
+                    <figure class="figure-item">
+                        <img src="img/ps3/T/BCAS20193.JPG" alt="Game T1">
+                        <figcaption class="special-caption">5.4_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/T/BCAS20230.JPG" alt="Game T2">
+                        <figcaption class="special-caption">13.5_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/T/BCAS25015.JPG" alt="Game T3">
+                        <figcaption class="special-caption">30_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/T/BCES01097.png" alt="Game T4">
+                        <figcaption class="special-caption">8_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/T/BCUS01089.JPG" alt="Game T5">
+                        <figcaption class="special-caption">17.1_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/T/BLES00187.JPG" alt="Game T6">
+                        <figcaption class="special-caption">5_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/T/BLES01547.JPG" alt="Game T7">
+                        <figcaption class="special-caption">8.3_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/T/BLES01702.JPG" alt="Game T8">
+                        <figcaption class="special-caption">18.6_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/T/BLUS30261.JPG" alt="Game T9">
+                        <figcaption class="special-caption">8_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/T/BLUS30359.JPG" alt="Game T10">
+                        <figcaption class="special-caption">12_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/T/BLUS30778.JPG" alt="Game T11">
+                        <figcaption class="special-caption">12.5_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/T/BLUS31374.JPG" alt="Game T12">
+                        <figcaption class="special-caption">8_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/T/BLUS31377.JPG" alt="Game T13">
+                        <figcaption class="special-caption">4.1_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/T/BLUS41016.JPG" alt="Game T14">
+                        <figcaption class="special-caption">9.6_GB</figcaption>
+                    </figure>
+
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/T/" alt="Game T15">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-U">
+                <div class="letter-header">U</div>
+                <div class="games">
+                    <figure class="figure-item">
+                        <img src="img/ps3/U/BCAS20097.JPG" alt="Game U1">
+                        <figcaption class="special-caption">21.8_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/U/BCAS25009.JPG" alt="Game U2">
+                        <figcaption class="special-caption">45_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/U/BLES00065_U.JPG" alt="Game U3">
+                        <figcaption class="special-caption">21_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/U/BLUS30787.JPG" alt="Game U4">
+                        <figcaption class="special-caption">3_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/U/BLUS31218.JPG" alt="Game U5">
+                        <figcaption class="special-caption">20_GB</figcaption>
+                    </figure>
+
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/U/" alt="Game U6">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-V">
+                <div class="letter-header">V</div>
+                <div class="games">
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/V/" alt="Game V1">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-W">
+                <div class="letter-header">W</div>
+                <div class="games">
+                    <figure class="figure-item">
+                        <img src="img/ps3/W/BLES00995.JPG" alt="Game W1">
+                        <figcaption class="special-caption">6_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/W/BLES01909.JPG" alt="Game W2">
+                        <figcaption class="special-caption">20_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/W/BLES02239.JPG" alt="Game W3">
+                        <figcaption class="special-caption">7.8_GB</figcaption>
+                    </figure>
+                    <figure class="figure-item">
+                        <img src="img/ps3/W/BLUS31176.JPG" alt="Game W4">
+                        <figcaption class="special-caption">15_GB</figcaption>
+                    </figure>
+
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/W/" alt="Game W5">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-X">
+                <div class="letter-header">X</div>
+                <div class="games">
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/X/" alt="Game X1">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-Y">
+                <div class="letter-header">Y</div>
+                <div class="games">
+                    <figure class="figure-item">
+                        <img src="img/ps3/Y/BLES01892.JPG" alt="Game Y1">
+                        <figcaption class="special-caption">5_GB</figcaption>
+                    </figure>
+
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/Y/" alt="Game Y2">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="game-section" id="section-Z">
+                <div class="letter-header">Z</div>
+                <div class="games">
+                    <figure class="figure-item">
+                        <img src="img/ps3/Z/BLES01756.JPG" alt="Game Z1">
+                        <figcaption class="special-caption">10_GB</figcaption>
+                    </figure>
+
+                    <!--<figure class="figure-item">
+                        <img src="img/ps3/Z/" alt="Game Z2">
+                        <figcaption class="special-caption">_GB</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+            <button class="volver-btn" onclick="window.location.href='index.html'">HOME</button>
+
+            <button class="inicio-btn" onclick="window.scrollTo(0, 0);">Inicio</button>
+
+            <!-- Mover el bloque de script al final del cuerpo -->
+            <script>
+                // Variable para la suma total en GB
+                let totalGB = 0;
+        
+                // Obtener los elementos de figure y los contenedores para la suma y caption
+                const figures = document.querySelectorAll('.figure-item');
+                const totalSuma = document.getElementById('total-suma');
+                const captionInfo = document.getElementById('caption-info');
+        
+                // Función para actualizar el texto del total en pantalla
+                function updateTotal() {
+                    totalSuma.textContent = `Total: ${totalGB.toFixed(2)} GB`;
+                }
+        
+                // Añadir evento de clic a cada figure
+                figures.forEach((figure) => {
+                    figure.addEventListener('click', function () {
+                        // Obtener el tamaño en GB del figcaption
+                        const captionText = this.querySelector('.special-caption').textContent;
+        
+                        // Convertir el valor de figcaption a GB
+                        let valueGB = 0;
+                        if (captionText.includes('_GB')) {
+                            valueGB = parseFloat(captionText.replace('_GB', ''));
+                        } else if (captionText.includes('_MB')) {
+                            valueGB = parseFloat(captionText.replace('_MB', '')) / 1024;
+                        }
+        
+                        // Verificar si la figura ya está seleccionada
+                        if (this.classList.contains('selected')) {
+                            // Deseleccionar y restar el valor
+                            this.classList.remove('selected');
+                            totalGB -= valueGB;
+                            captionInfo.style.display = 'none'; // Ocultar cuadro de información
+                        } else {
+                            // Seleccionar y añadir el valor
+                            this.classList.add('selected');
+                            totalGB += valueGB;
+        
+                            // Mostrar el caption en el cuadro de información
+                            captionInfo.textContent = `Seleccionado: ${captionText}`;
+                            captionInfo.style.display = 'block';
+                        }
+        
+                        // Actualizar el total acumulado
+                        updateTotal();
+                    });
+                });
+            </script>
+        </body>
+        
+        </html>
