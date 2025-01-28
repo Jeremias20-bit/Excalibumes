@@ -2664,35 +2664,32 @@
 
                 // Función para terminar el arrastre
                 const stopDrag = () => {
-                    isDragging = false;
-                    cuadro.style.cursor = "grab"; // Restaura el cursor
+                    if (isDragging) {
+                        isDragging = false;
+                        cuadro.style.cursor = "grab"; // Restaura el cursor
+                    }
                 };
 
                 // Eventos para PC (mouse)
-                cuadro.addEventListener("mousedown", (e) => {
-                    startDrag(e.clientX, e.clientY);
-                });
-                document.addEventListener("mousemove", (e) => {
-                    if (isDragging) e.preventDefault(); // Evita comportamientos predeterminados
-                    moveDrag(e.clientX, e.clientY);
-                });
-                document.addEventListener("mouseup", stopDrag);
+                cuadro.addEventListener('mousedown', (e) => startDrag(e.clientX, e.clientY));
+                document.addEventListener('mousemove', (e) => moveDrag(e.clientX, e.clientY));
+                document.addEventListener('mouseup', stopDrag);
 
                 // Eventos para dispositivos móviles (táctiles)
-                cuadro.addEventListener("touchstart", (e) => {
+                cuadro.addEventListener('touchstart', (e) => {
                     const touch = e.touches[0]; // Obtenemos el primer toque
                     startDrag(touch.clientX, touch.clientY);
                 });
 
-                document.addEventListener("touchmove", (e) => {
+                document.addEventListener('touchmove', (e) => {
                     if (isDragging) {
-                        const touch = e.touches[0];
+                        const touch = e.touches[0]; // Obtenemos el primer toque
                         moveDrag(touch.clientX, touch.clientY);
-                        e.preventDefault(); // Evita el scroll de la página solo al mover
+                        e.preventDefault(); // Evita que la página se desplace mientras arrastras
                     }
                 });
 
-                document.addEventListener("touchend", stopDrag);
+                document.addEventListener('touchend', stopDrag);
 
                 // Estilo inicial del cursor
                 cuadro.style.cursor = "grab";
