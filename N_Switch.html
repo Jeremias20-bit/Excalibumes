@@ -2677,19 +2677,21 @@
 
                 // Eventos para dispositivos móviles (táctiles)
                 cuadro.addEventListener('touchstart', (e) => {
+                    e.preventDefault(); // Prevenir el comportamiento por defecto
                     const touch = e.touches[0]; // Obtenemos el primer toque
                     startDrag(touch.clientX, touch.clientY);
                 });
 
                 document.addEventListener('touchmove', (e) => {
-                    if (isDragging) {
-                        const touch = e.touches[0]; // Obtenemos el primer toque
-                        moveDrag(touch.clientX, touch.clientY);
-                        e.preventDefault(); // Evita que la página se desplace mientras arrastras
-                    }
+                    e.preventDefault(); // Prevenir el comportamiento por defecto
+                    const touch = e.touches[0]; // Obtenemos el primer toque
+                    moveDrag(touch.clientX, touch.clientY);
                 });
 
-                document.addEventListener('touchend', stopDrag);
+                document.addEventListener('touchend', (e) => {
+                    e.preventDefault(); // Prevenir el comportamiento por defecto
+                    stopDrag();
+                });
 
                 // Estilo inicial del cursor
                 cuadro.style.cursor = "grab";
