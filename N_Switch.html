@@ -2643,9 +2643,7 @@
 
                 // Cambiamos el cursor al pasar por el cuadro para indicar que es movible
                 cuadro.style.cursor = "grab";
-            </script>
 
-            <script>
                 // Función para comenzar el arrastre
                 const startDrag = (x, y) => {
                     isDragging = true;
@@ -2677,21 +2675,16 @@
 
                 // Eventos para dispositivos móviles (táctiles)
                 cuadro.addEventListener('touchstart', (e) => {
-                    e.preventDefault(); // Prevenir el comportamiento por defecto
                     const touch = e.touches[0]; // Obtenemos el primer toque
                     startDrag(touch.clientX, touch.clientY);
                 });
 
                 document.addEventListener('touchmove', (e) => {
-                    e.preventDefault(); // Prevenir el comportamiento por defecto
                     const touch = e.touches[0]; // Obtenemos el primer toque
                     moveDrag(touch.clientX, touch.clientY);
                 });
 
-                document.addEventListener('touchend', (e) => {
-                    e.preventDefault(); // Prevenir el comportamiento por defecto
-                    stopDrag();
-                });
+                document.addEventListener('touchend', stopDrag);
 
                 // Estilo inicial del cursor
                 cuadro.style.cursor = "grab";
