@@ -2644,6 +2644,53 @@
                 // Cambiamos el cursor al pasar por el cuadro para indicar que es movible
                 cuadro.style.cursor = "grab";
             </script>
+            
+            <script>
+                // Función para comenzar el arrastre
+                const startDrag = (x, y) => {
+                    isDragging = true;
+                    offsetX = x - cuadro.offsetLeft;
+                    offsetY = y - cuadro.offsetTop;
+                    cuadro.style.cursor = "grabbing"; // Cambia el cursor a "grabbing"
+                };
+
+                // Función para mover el cuadro
+                const moveDrag = (x, y) => {
+                    if (isDragging) {
+                        cuadro.style.left = `${x - offsetX}px`;
+                        cuadro.style.top = `${y - offsetY}px`;
+                    }
+                };
+
+                // Función para terminar el arrastre
+                const stopDrag = () => {
+                    if (isDragging) {
+                        isDragging = false;
+                        cuadro.style.cursor = "grab"; // Restaura el cursor
+                    }
+                };
+
+                // Eventos para PC (mouse)
+                cuadro.addEventListener('mousedown', (e) => startDrag(e.clientX, e.clientY));
+                document.addEventListener('mousemove', (e) => moveDrag(e.clientX, e.clientY));
+                document.addEventListener('mouseup', stopDrag);
+
+                // Eventos para dispositivos móviles (táctiles)
+                cuadro.addEventListener('touchstart', (e) => {
+                    const touch = e.touches[0]; // Obtenemos el primer toque
+                    startDrag(touch.clientX, touch.clientY);
+                });
+
+                document.addEventListener('touchmove', (e) => {
+                    const touch = e.touches[0]; // Obtenemos el primer toque
+                    moveDrag(touch.clientX, touch.clientY);
+                });
+
+                document.addEventListener('touchend', stopDrag);
+
+                // Estilo inicial del cursor
+                cuadro.style.cursor = "grab";
+            </script>
 
 </body>
 
