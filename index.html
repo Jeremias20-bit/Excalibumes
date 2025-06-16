@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1024">
+    <meta name="google" content="notranslate">
     <title>Excalibur Catalogos</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,7 +12,7 @@
 
 <style>
     body {
-        background-image: url('img/index_fondo/swit3.jpeg');
+        background-image: url('img/index_fondo/INDEX.FOND.webp');
         /* Reemplaza con la ruta de tu imagen */
         background-size: cover;
         background-position: center;
@@ -118,34 +119,144 @@
         }
     }
 
-      /* Estilos para el botón */
-      .producrgb-button {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    width: 150px;
-    height: 60px;
-    border-radius: 50%;
-    border: none;;
-    background: linear-gradient(400deg, rgb(255, 0, 0), rgb(0, 0, 0), rgb(0, 4, 255));
-    background-size: 200% 200%;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    animation: gradient-animation 3s ease infinite;
-  }
+    /* Estilos para el botón */
+    .producrgb-button {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        width: 150px;
+        height: 60px;
+        border-radius: 50%;
+        border: none;
+        ;
+        background: linear-gradient(400deg, rgb(255, 0, 0), rgb(0, 0, 0), rgb(0, 4, 255));
+        background-size: 200% 200%;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        animation: gradient-animation 3s ease infinite;
+    }
 
-  /* Animación de colores RGB */
-  @keyframes gradient-animation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
+    .square-button {
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        width: 200px;
+        height: 110px;
+        border-radius: 5px;
+        border: none;
+        background: linear-gradient(400deg, rgb(255, 60, 0), rgb(0, 0, 0), rgb(255, 255, 255));
+        background-size: 200% 200%;
+        color: white;
+        font-weight: bold;
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        animation: gradient-animation 3s ease infinite;
+    }
+
+    /* Animación de colores RGB */
+    @keyframes gradient-animation {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .tutorial-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    z-index: 99999;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.tutorial-header {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+    z-index: 10;
+}
+
+.tutorial-header button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tutorial-slider {
+    display: flex;
+    width: 400vw; /* 4 slides */
+    height: 100vh;
+    transition: transform 0.5s ease-in-out;
+}
+
+.tutorial-slide {
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.tutorial-slide img {
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+    background: black; /* fondo para los márgenes */
+}
+
+.white-slide {
+    background: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.finalizar-btn {
+    padding: 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #00ffc3;
+    color: black;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00ffc3;
+    transition: transform 0.3s;
+}
+
+.finalizar-btn:hover {
+    transform: scale(1.05);
+}
+
+    
 </style>
 
 <body>
@@ -153,58 +264,97 @@
     <div class="container menu-container">
         <h1>Excalibur Videogames CATALOGOS</h1>
         <a href="ps2.html">
-            <img src="img/PS-2.png" alt="PS2" width="60" height="60">
+            <img src="img/PS-2.webp" alt="PS2" width="100" height="100">
         </a>
         <a href="psvita.html">
-            <img src="img/PS-Vita.png" alt="PSVITA" width="60" height="60">
+            <img src="img/PS-Vita.webp" alt="PSVITA" width="100" height="100">
         </a>
         <a href="PSP.html">
-            <img src="img/PS-psp.png" alt="PSP" width="60" height="60">
+            <img src="img/PS-psp.webp" alt="PSP" width="100" height="100">
         </a>
         <a href="Menu_PS3.html">
-            <img src="img/PS-PS3.png" alt="PS3" width="60" height="60">
+            <img src="img/PS-PS3.webp" alt="PS3" width="100" height="100">
         </a>
         <a href="N_Wii.html">
-            <img src="img/Nintendo-Wii.png" alt="Nintendo Wii" width="60" height="60">
+            <img src="img/Nintendo-Wii.webp" alt="Nintendo Wii" width="100" height="100">
         </a>
         <a href="GameCube.html">
-            <img src="img/Nintendo-Gamecube.png" alt="GameCube" width="60" height="60">
+            <img src="img/Nintendo-Gamecube.webp" alt="GameCube" width="100" height="100">
         </a>
         <a href="Wii_U.html">
-            <img src="img/Nintendo-WIIU.png" alt="Wii U" width="60" height="60">
+            <img src="img/Nintendo-WIIU.webp" alt="Wii U" width="100" height="100">
         </a>
         <a href="N_Switch.html">
-            <img src="img/Nintendo-Switch.png" alt="Nintendo Switch" width="60" height="60">
+            <img src="img/Nintendo-Switch.webp" alt="Nintendo Switch" width="100" height="100">
         </a>
     </div>
-    
-    
 
-    <!-- JavaScript para la transición de imágenes -->
+    <div id="tutorial-overlay" class="tutorial-overlay">
+        <div class="tutorial-header">
+            <button onclick="irSlide(0)">1</button>
+            <button onclick="irSlide(1)">2</button>
+            <button onclick="irSlide(2)">3</button>
+            <button onclick="irSlide(3)">4</button>
+        </div>
+    
+        <div class="tutorial-slider" id="tutorial-slider">
+            <div class="tutorial-slide">
+                <img src="img/1 INTRUCCION.jpg" alt="Intro 1">
+            </div>
+            <div class="tutorial-slide">
+                <img src="img/2 INTRUCCION.jpg" alt="Intro 2">
+            </div>
+            <div class="tutorial-slide">
+                <img src="img/3 INTRUCCION.jpg" alt="Intro 3">
+            </div>
+            <div class="tutorial-slide white-slide">
+                <button class="finalizar-btn" onclick="cerrarTutorial()">FINALIZAR TUTORIAL</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Contenido principal oculto al inicio -->
+    <div id="contenido-principal" style="display: none;">
+        <!-- TODO tu contenido real aquí -->
+    </div>
+    
     <script>
-        const images = [
-            'img/index_fondo/switch.jpeg',
-            'img/index_fondo/switch2.jpeg',
-            'img/index_fondo/ps2.png',
-            'img/index_fondo/psx.jpg',
-            'img/index_fondo/psvita.jpg',
-            'img/index_fondo/wii.jpg',
-            'img/index_fondo/gamecube.jpg',
-            'img/index_fondo/wiiu.jpg'
-        ];
-
-        let currentIndex = 0;
-        setInterval(() => {
-            document.body.style.backgroundImage = `url(${images[currentIndex]})`;
-            currentIndex = (currentIndex + 1) % images.length;
-        }, 2000);
+        let slideIndex = 0;
+        const slider = document.getElementById('tutorial-slider');
+    
+        function irSlide(index) {
+            slideIndex = index;
+            slider.style.transform = `translateX(-${index * 100}vw)`;
+        }
+    
+        function cerrarTutorial() {
+            document.getElementById('tutorial-overlay').style.display = 'none';
+            document.getElementById('contenido-principal').style.display = 'block';
+        }
+    
+        // Swipe móvil
+        let startX = 0;
+        slider.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+    
+        slider.addEventListener('touchend', (e) => {
+            const endX = e.changedTouches[0].clientX;
+            const deltaX = endX - startX;
+            if (deltaX > 50 && slideIndex > 0) {
+                irSlide(slideIndex - 1);
+            } else if (deltaX < -50 && slideIndex < 3) {
+                irSlide(slideIndex + 1);
+            }
+        });
+    
+        // Teclado
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' && slideIndex < 3) irSlide(slideIndex + 1);
+            if (e.key === 'ArrowLeft' && slideIndex > 0) irSlide(slideIndex - 1);
+        });
     </script>
-
-    <!-- Bootstrap JS (Optional) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!--<button class="producrgb-button" onclick="window.location.href='Productos.html';">\ Productos /</button>-->
-
+    
 
 </body>
 
